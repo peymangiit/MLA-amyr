@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: arial;
+    padding: 10px;
+    background-color: #E1BEE7;
+}
+.header {
+
+    padding: 30px;
+   
+    background: #BA68C8;
+}
+
+
+ul
+{
+	list-style:none;
+}
+ 
+li
+{
+	float: right;
+	width: auto;
+	position: relative;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 40px;
+}
+ 
+ul li
+{
+ float: right;
+ font-family:'yekan'; 
+  display: inline-block;
+}
+ 
+  ul li a
+{
+	padding:5px 18px 0px 10px;
+	font: 15px 'Yekan';
+   font-weight:bold; 
+	color:#323232;
+	max-height:33px;
+	margin-top:3px;
+    line-height:0px;
+	display: inline-block;
+}
+
+  ul li ul
+{
+	Display:none;
+    padding: 0;
+    margin:5px;
+    position: absolute;
+    transition: all 0.5s ease 0s;
+    visibility: hidden;
+    width: 150px;
+   Z-index:1;
+ 
+    margin-right:-10px;
+}
+ 
+ul li ul li
+{
+  width:150px;
+  height:auto;
+  text-align:center;
+  padding:10px;
+  border:1px solid ;
+	opacity: .85;
+}
+ 
+ul li ul li:hover
+{
+  width:150px;
+  border:1px solid ;
+
+}
+ 
+  ul li:hover ul
+{
+   display: block;
+   opacity: 1;
+  visibility: visible; 
+}
+ 
+  ul li ul li a 
+{
+   color: #000000;
+   width: 150px;
+	text-align: center;
+	padding:15px;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    transition: all ease 0.2s;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.leftcol {
+	
+    float: left;
+    width: 75%;
+}
+.img {
+    background-color: #7986CB;
+    width: 100%;
+    padding: 20px;
+	padding-bottom: 20px;
+}
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+	margin-bottom: 20px;
+}
+.rightcol {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #ddd;
+    margin-top: 20px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+
+}
+@media screen and (max-width:980px) {
+    .leftcol, .rightcol {
+        width: 100%;
+        padding: 0;
+    }
+}
+@media screen and (max-width:600px) {
+    .topnav {
+display: none;
+    }
+}
